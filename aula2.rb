@@ -21,6 +21,44 @@ puts "Divisão decimal: #{a.to_f / b}"        # 3.33
 puts "Módulo (resto da divisão): #{a % b}"   # 1
 puts "Exponenciação: #{a**b}"                # 100 (10³)
 
+puts 10 == 10   # Igualdade 
+puts 10 != 10   # Diferença
+puts 10 > 5     # Maior
+puts 5 < 10     # Menor
+puts 10 >= 10   # Maior ou Igual
+puts 7 <= 5     # Menor ou Igual
+
+# 2.1 -- Comparação Operador Spaceshio
+puts 10 <=> 20   # -1 (Se o primeiro valor for MENOR que o segundo)
+puts 15 <=> 15   #  0 (Se forem iguais)
+puts 10 <=> 20   # +1 (Se o primeiro valor for MAIOR que o segundo)
+
+# 2.2 -- Comparação de Objetos (equal?)
+a = "Ruby"
+b = "Ruby"
+c = a
+
+puts a.equal?(b)    # false (mesmo valor, mas objetos diferentes)
+puts a.equal?(c)    # true (apontam para o mesmo objeto)
+
+# 2.3 -- Comparação de Tipos === é usado em:
+# case
+idade = 25
+
+case idade
+when 0..17
+    puts "Menor de idade"
+when 18..64
+    puts "Adulto"
+else
+    puts "Idoso"
+end
+
+# classes
+puts Integer  === 10    # true
+puts String === "Ruby"  # true
+puts Float === 5        # false
+
 # 3 --  Gerando Números Aleatórios --
 
 puts rand            # Número decimal entre 0.0 e 1.0
