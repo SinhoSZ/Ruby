@@ -31,16 +31,6 @@ string2 = "Mundo"
 puts string1 + string2          # "OláMundo"
 puts string1 + " " + string2    # Olá Mundo
 
-# 5 -- ESTRUTURAS DE CONTROLE --
-
-if idade >= 18
-    puts "Maior de idade"
-elsif idade >= 12
-    puts "Adolescente"
-else
-    puts "Criança"
-end 
-
 # 6 -- LOOP (while) --
 
 #   contador = 0                        # Define uma variável contador com valor inicial 0
