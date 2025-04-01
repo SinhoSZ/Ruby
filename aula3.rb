@@ -108,7 +108,7 @@ idade = 25
 tem_ingresso = true
 barrado = false
 
-if idade >= 18 && tem_igresso && !barrado
+if idade >= 18 && tem_ingresso && !barrado
     puts "podemos entrar na festa!"
 else
     puts "entrada proíbida!"
