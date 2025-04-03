@@ -37,8 +37,8 @@ end
 
 # 6 -- MÉTODO ÚTEIS PARA HASHES
 
-pessoa2.keys                        # [:nome, :cidade, :profissao]              -> todas as chaves
-pessoa2.values                      # ["José", "São Paulo", "Desenvolvedor"]    -> todos os valores
+pessoa2.keys                        # [:nome, :cidade, :profissao]              -> Lista todas as chaves
+pessoa2.values                      # ["José", "São Paulo", "Desenvolvedor"]    -> Retorna todos os valores
 pessoa2.has.key?(:nome)             # true                                      -> Verifica se a chave existe
 pessoa2.has.value?("Engenheiro")    # false                                     -> Verifica se o valor existe
 
