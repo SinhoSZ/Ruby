@@ -25,6 +25,10 @@ puts numeros.first          # 1 (Primeiro elemento)
 puts numeros.last           # 5 (Último elemento)
 puts numeros.empty?         # false (Verifica se está vazio)
 puts numeros.include?(3)    # true (Verifica se o arrays contém 3)
+puts numeros.reverse        # Inverte um array
+puts numeros.reverse!       # Inverte um array e modificar o original
+puts numeros.shuffle        # Embaralhar os elementos do array
+
 
 # 4 -- ADICIONANDO E REMOVENDO ELEMENTOS
 
@@ -32,9 +36,11 @@ frutas = ["Maçã", "Banana"]
 
 frutas.push("Uva")      # Adiciona no final
 frutas << "Laranja"     # Outra forma de adicionar no final
-frutas.unshift("MAnga") # Adiciona no início
-frutas.pop              # Remove o último
+frutas.unshift("Manga") # Adiciona no início
 frutas.shift            # Remove o primeiro
+frutas.pop              # Remove o último
+frutas.uniq             # Remove elementos duplicados sem alterar o array original
+furtas.uniq!            # Remove elementos duplicados e mdifica o array original
 
 puts frutas.inspect
 
@@ -42,7 +48,7 @@ puts frutas.inspect
 
 numeros = [1, 2, 3, 4, 5]
 
-numeros.each do |num|   # eacch percorre cada elemento do array
+numeros.each do |num|   # each percorre cada elemento do array
     puts "Numero: #{num}"
 end
 
@@ -63,7 +69,7 @@ puts impares.inspect    # [1, 3, 5]
 
 # 9 -- each_with_index - ITERANDO COM ÍNDICE
 
-frutas = ["MAça", "Banana", "Uva"]
+frutas = ["Maça", "Banana", "Uva"]
 
 frutas.each_with_indez do |fruta, index| # Útil quando precisamos do índice e do valor ao mesmo tempo
     puts "#{index}: #{fruta}"
@@ -89,3 +95,14 @@ puts frutas
 
 # SAÍDA
     # ["Maçã", "Banana", "Uva"]
+
+# 12 -- Intervalos (RANGES) CONVERTIDOS EM ARRAYS   
+
+(0..25).to_a            # Cria um array de 0 a 25
+(0..99).to_a.shuffle!   # Cria um array de 0 a 99 em ordem aleatória
+
+# 13 -- JUNTAND ELEMENTOS DE UM ARRAY EM UMA STRING
+
+p.join           # sem separação
+p.join(" ")      # Com espaço entre os elementos
+p.join("-")      # Com traço entre os elements
