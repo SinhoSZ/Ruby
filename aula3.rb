@@ -113,3 +113,19 @@ if idade >= 18 && tem_ingresso && !barrado
 else
     puts "entrada proíbida!"
 end
+
+# 12 -- CÓDIGO LIMPO
+    # CONDIÇÕES E ESTRUTURAS DE CONTROLE
+
+    # EVITAR then EM if DE UMA LINHA
+    # USAR &&, ||, ! AO INVÉS DE and, or, not.
+
+    # CERTO
+if idade >= 18
+    puts "Maior de idade"
+else
+    puts "Menor de idade"
+end
+    
+    # ERRADO
+if idade >= 18 then puts "maior de idade" end
